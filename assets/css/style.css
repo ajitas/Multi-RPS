@@ -1,0 +1,36 @@
+.container{
+    text-align:center;
+    background:rgb(105, 197, 233);
+    height:900px;
+}
+.heading {
+    font-weight:bold;
+    font-size:24px;
+    padding-top:20px;
+    padding-bottom:20px;
+    background:rgb(6, 6, 170);
+    color:white;
+}
+
+.box {
+    border: 1px black solid;
+    margin-top:20px;
+    height:200px;
+    
+}
+
+.boxes {
+    margin-left:20px;
+    margin-right:20px;
+}
+#chat-display {
+    height: 200px;
+    overflow-y: scroll;
+
+  }
+
+  .chatbox {
+      margin-top:20px;
+  }
+
+  
