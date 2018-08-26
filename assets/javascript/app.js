@@ -138,6 +138,7 @@ $(function(){
     })
         
     function showRPS(){
+        $("#player1-choice").text("");
         var choices = $("<div>").addClass("row");
         var rockCol = $("<div>").addClass("col-4");
         var rock = $("<button class='btn btn-option'>").text("rock");
@@ -153,15 +154,17 @@ $(function(){
         choices.append(paperCol);
         choices.append(scissorsCol);
 
-        $("#player1-choice").empty();
-        $("#player1-choice").append(choices);
+        $("#player1-choices").empty();
+        $("#player1-choices").append(choices);
         $("#welcome-message").text(playerName+", Make a choice...");
     
     }
 
     $("body").on("click",".btn-option", function(e){
        $("#welcome-message").text("Waiting on opponent...");
-
+       $("#player1-choice").text("You chose: "+$(this).text());
+       $(".btn-option").attr("disabled","true");
+       $(this).attr("disabled","false");
         database.ref("/players/" + playerSpot).set({
             choice: $(this).text()
         })

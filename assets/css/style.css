@@ -66,4 +66,18 @@
   #player1-name {
       font-size:25px;
   }
+
+.score {
+    padding-top:40px;
+}
+#player1-wins, #player1-losses, #player1-ties {
+    padding-top:2px;
+    padding-bottom:2px;
+    font-size:20px;
+}
+
+#player1-choice {
+    padding-top:20px;
+    font-size:20px;
+}
   
