@@ -86,7 +86,7 @@ $(function(){
 
             }
             else{
-                $("#welcome-message").html("Waiting for opponent...");
+                $("#welcome-message").html("Waiting for another player to join...");
             }
 
         }
@@ -161,7 +161,7 @@ $(function(){
     }
 
     $("body").on("click",".btn-option", function(e){
-       $("#welcome-message").text("Waiting on opponent...");
+       $("#welcome-message").text("Waiting for another player to choose...");
        $("#player1-choice").text("You chose: "+$(this).text());
        $(".btn-option").attr("disabled","true");
        $(this).attr("disabled","false");
