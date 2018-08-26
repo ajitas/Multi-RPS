@@ -37,39 +37,32 @@
                 </div>
                 <div class="col-md-4"></div>
         </div>
-        <div class="row" id="welcome-message-row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4" id="welcome-message-player1">
-                </div>
-                <div class="col-md-4"></div>
-        </div>
-        <div class="row" id="welcome-message-row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4" id="welcome-message-player2">
-                </div>
-                <div class="col-md-4"></div>
-        </div>
-        <div class="row boxes">
-            <div class="col-md-3 box player" id="player1">
+        <div class="row boxes hide">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 box player" id="player1">
                 <div class="row">
                     <div class="col-md-12" id ="player1-name">Waiting for Player</div>
                 </div>
                 <div class="row">
                     <div class="col-md-12" id="player1-choice"></div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12" id="player1-wins"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12" id="player1-losses"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12" id="player1-ties"></div>
-                </div>
             </div>
             <div class="col-md-1"></div>
+            <div class="col-md-3 score">
+                <div class="row">
+                    <div class="col-md-12" id="player1-wins">Wins: 0</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="player1-losses">Losses: 0</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="player1-ties">Ties: 0</div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+    
         </div>
-        <div class="row chatbox">
+        <div class="row chatbox hide">
             <div class="col-md-2"></div>
             <div class="col-md-8 chatrow">
                 <div class="card">
@@ -89,15 +82,19 @@
             </div>
             <div class="col-md-2"></div>
         </div>
-        <div class="col-md-4">
-            <div class="card mt-2">
-                <div class="card-heading">
-                    <h3 class="card-title">Queue</h3>
-                </div>
-                <div class="card-body" id="queue">
+        <div class="row queuebox hide">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="card mt-2">
+                    <div class="card-heading">
+                        <h3 class="card-title">Queue</h3>
+                    </div>
+                    <div class="card-body" id="queue">
 
+                    </div>
                 </div>
             </div>
+            <div class="col-md-3"></div>
         </div>
     </div>
 

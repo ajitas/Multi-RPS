@@ -28,6 +28,8 @@ $(function(){
         playerName = $("#player-name").val().trim();
         $("#name-input-row").hide();
         $("#welcome-message").show();
+        $(".boxes").addClass("show");
+        $(".queuebox").addClass("show");
         $("#player1-name").text(playerName);
 
         var connect = connectionsRef.push({playername: playerName});
@@ -51,7 +53,8 @@ $(function(){
             database.ref("/players/" + playerSpot).set({
                 choice: "none",
             })
-            $("#welcome-message").html("Play...");
+            $("#welcome-message").html(playerName+", Make a choice...");
+            $(".chatbox").addClass("show");
             showRPS();
         }
         else{
@@ -152,7 +155,7 @@ $(function(){
 
         $("#player1-choice").empty();
         $("#player1-choice").append(choices);
-        $("#welcome-message").text("Play...");
+        $("#welcome-message").text(playerName+", Make a choice...");
     
     }
 

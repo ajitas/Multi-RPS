@@ -12,7 +12,7 @@
     color:white;
 }
 
-.box {
+.box, .score {
     border: 1px black solid;
     margin-top:20px;
     height:200px;
@@ -40,5 +40,30 @@
       padding:55px;
       font-size:20px;
       display:none;
+  }
+
+  .card-heading{
+      background:rgb(6, 6, 170);
+      color:white;
+      padding-top:10px;
+      padding-bottom:10px;
+  }
+  .hide {
+      visibility:hidden;
+  }
+
+  .show{
+    visibility:visible;
+  }
+
+  .btn-option {
+      background:rgb(6, 6, 170);
+      color:white;
+      box-shadow: 3px 3px 5px white;
+      margin-top:20px;
+  }
+
+  #player1-name {
+      font-size:25px;
   }
   
