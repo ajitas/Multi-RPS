@@ -1,7 +1,7 @@
 .container{
     text-align:center;
     background:rgb(105, 197, 233);
-    height:900px;
+    overflow:auto;
 }
 .heading {
     font-weight:bold;
@@ -26,6 +26,7 @@
 #chat-display {
     height: 200px;
     overflow-y: scroll;
+    text-align:left;
 
   }
 
@@ -33,4 +34,11 @@
       margin-top:20px;
   }
 
+
+
+  #welcome-message {
+      padding:55px;
+      font-size:20px;
+      display:none;
+  }
   

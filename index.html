@@ -18,46 +18,86 @@
                 Rock-Paper-Scissor
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="name-input-row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
                 <form>
                     <div class="form-group">
                         <label for="player-name">Enter your Name</label>
-                        <input type="text" class="form-control" id="player-name">
+                        <input type="text" class="form-control" id="player-name" placeholder="Name">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary" id="player-add">Submit</button>
                 </form>
             </div>
             <div class="col-md-4"></div>
         </div>
+        <div class="row" id="welcome-message-row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4" id="welcome-message">
+                </div>
+                <div class="col-md-4"></div>
+        </div>
+        <div class="row" id="welcome-message-row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4" id="welcome-message-player1">
+                </div>
+                <div class="col-md-4"></div>
+        </div>
+        <div class="row" id="welcome-message-row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4" id="welcome-message-player2">
+                </div>
+                <div class="col-md-4"></div>
+        </div>
         <div class="row boxes">
             <div class="col-md-3 box player" id="player1">
-                Player1
+                <div class="row">
+                    <div class="col-md-12" id ="player1-name">Waiting for Player</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="player1-choice"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="player1-wins"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="player1-losses"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="player1-ties"></div>
+                </div>
             </div>
             <div class="col-md-1"></div>
-            <div class="col-md-4 box" id="result"></div>
-            <div class="col-md-1"></div>
-            <div class="col-md-3 box player" id="player2">
-                Player2
-            </div>
         </div>
         <div class="row chatbox">
-            <div class="col-2"></div>
-            <div class="col">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 chatrow">
                 <div class="card">
+                    <div class="card-heading">
+                        <h3 class="card-title">Chat</h3>
+                    </div>
                     <div class="card-body" id="chat-display"></div>
                     <form class="form mx-3 mt-3">
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" id="chat-input">
                             <div class="input-group-append">
-                                <button class="btn px-3 btn-outline-secondary" type="submit" id="chat-submit">Chat</button>
+                                <button class="btn px-3 btn-outline-secondary" type="submit" id="chat-submit">Send</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="col-2"></div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mt-2">
+                <div class="card-heading">
+                    <h3 class="card-title">Queue</h3>
+                </div>
+                <div class="card-body" id="queue">
+
+                </div>
+            </div>
         </div>
     </div>
 
